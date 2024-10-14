@@ -5,17 +5,20 @@
 
 
 Acties:
-- L
+- User stories gemaakt
+- ERD gemaakt
+- Planning gemaakt
+- Geleerd over components en partials
 
 Bronnen:
 - Geen
 
 Wat verliep goed:
-- H
+- Het toepassen van de feedback op mijn ERD
 
 
 Wat was lastig:
-- nvt
+- Het vinden van de code in mijn Laravel project die verwijst naar de login/register voor de opdracht van de les
 
 
 Wat heb ik geleerd:
@@ -27,7 +30,8 @@ Screenshots:
 
 
 Feedback:
-- geen
+- Het maken van de ERD moet in een gepaste tool gemaakt zijn.
+- Vervang reviews voor categories in de ERD
 
 ## 10-10-2024
 

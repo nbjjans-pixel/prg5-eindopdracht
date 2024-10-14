@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SecretController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
@@ -28,6 +29,9 @@ Route::get('/about-us', [AboutUsController::class, 'show'])->name('about-us');
 Route::get('products/{id}', function(int $id) {
     return view('products', ['id' => $id]);
 }) ->name('products');
+
+
+Route::get('secret', [SecretController::class, 'show']);
 
 
 require __DIR__.'/auth.php';
