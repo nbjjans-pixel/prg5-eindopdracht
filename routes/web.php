@@ -22,6 +22,7 @@ Route::middleware('auth')->group(function () {
 //andere mogelijkheden naar get zijn: patch, delete, put, post, options, match, any
 
 Route::resource('products', ProductController::class);
+
 Route::get('/about-us', [AboutUsController::class, 'show'])->name('about-us');
 
 Route::get('products/{id}', function(int $id) {

@@ -1,5 +1,97 @@
 # Changelog
 
+
+## 14-10-2024
+
+
+Acties:
+- L
+
+Bronnen:
+- Geen
+
+Wat verliep goed:
+- H
+
+
+Wat was lastig:
+- nvt
+
+
+Wat heb ik geleerd:
+- z
+
+
+Screenshots:
+- nog niet
+
+
+Feedback:
+- geen
+
+## 10-10-2024
+
+
+Acties:
+- Laravel eindproject opnieuw aangemaakt en op github gezet.
+- Geleerd over views en opdrachten hierover gemaakt
+- Geleerd over controllers en opdrachten hierover gemaakt
+
+Bronnen:
+- Geen
+
+Wat verliep goed:
+- Het maken va nde opdrachten
+
+
+Wat was lastig:
+- nvt
+
+
+Wat heb ik geleerd:
+- zie acties
+
+
+Screenshots:
+- nog niet
+
+
+Feedback:
+- geen
+
+
+
+## 8-10-2024
+
+Acties:
+- Instalatie van twee andere PHP MVC frameworks namenlijk: Yii 2 en CodeIgniter
+- Basis Controller, Route en view maken in deze 2 niewe frameworks
+- Bijwerken onderzoeksverslag
+
+Bronnen:
+- https://www.yiiframework.com/doc/guide/2.0/en/start-installation
+- https://www.codeigniter.com/
+
+
+Wat verliep goed:
+- Het instaleren van de nieuwe frameworks. Ookal waren er errors die ik moest oplossen lukte mij het deze keer veel beter dan bij de aller eerste instalatie wat liet zien dat ik vooruit ben gegaan als probleemoplossende developer. Dit gaf mij veel zelfvertrouwen
+
+
+Wat was lastig:
+- Uitvinden hoe het maken van een nieuwe pagina met 'Route', Controller en view ging in Yii 2
+
+
+Wat heb ik geleerd:
+- Niet alleen van opdrachten doen kan je veel leren ook een instalatie doen heeft een leercurve
+
+
+Screenshots:
+- nog niet
+
+
+Feedback:
+- Uit een peerreview van Kasper, een medestudent, kwam dat ik aan mijn opmaak van het verslag kon werken en de bronnen in APA kon zetten. Dit laatste is echter niet verplicht maar wel een uitstekende oefening voor een eind- stageverslag.
+
 ## 7-10-2024
 Gewerkt aan instalatie:
 
@@ -36,35 +128,5 @@ Feedback:
 - Voor deze eerste dag was er nog geen feedback te geven, zie de docent.
 
 
-## 8-10-2024
-
-Acties:
-- Instalatie van twee andere PHP MVC frameworks namenlijk: Yii 2 en CodeIgniter
-- Basis Controller, Route en view maken in deze 2 niewe frameworks
-- Bijwerken onderzoeksverslag
-
-Bronnen:
-- https://www.yiiframework.com/doc/guide/2.0/en/start-installation
-- https://www.codeigniter.com/
 
 
-Wat verliep goed:
-- Het instaleren van de nieuwe frameworks. Ookal waren er errors die ik moest oplossen lukte mij het deze keer veel beter dan bij de aller eerste instalatie wat liet zien dat ik vooruit ben gegaan als probleemoplossende developer. Dit gaf mij veel zelfvertrouwen
-
-
-Wat was lastig:
-- Uitvinden hoe het maken van een nieuwe pagina met 'Route', Controller en view ging in Yii 2
-
-
-Wat heb ik geleerd:
-- Niet alleen van opdrachten doen kan je veel leren ook een instalatie doen heeft een leercurve
-
-
-Screenshots:
-- nog niet
-
-
-Feedback:
-- Uit een peerreview van Kasper, een medestudent, kwam dat ik aan mijn opmaak van het verslag kon werken en de bronnen in APA kon zetten. Dit laatste is echter niet verplicht maar wel een uitstekende oefening voor een eind- stageverslag.
-
-## 10-10-2024
