@@ -1,5 +1,5 @@
 # Changelog
-
+## 15-10-2024
 
 ## 14-10-2024
 
@@ -22,7 +22,7 @@ Wat was lastig:
 
 
 Wat heb ik geleerd:
-- z
+- Het is netjes om ENUM te gebruiken in je database MAAR makkelijker om met 1 en 2 enz te werken met intergers
 
 
 Screenshots:
