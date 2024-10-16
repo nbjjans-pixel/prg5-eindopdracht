@@ -6,6 +6,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SecretController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HouseController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,7 +33,8 @@ Route::get('products/{id}', function(int $id) {
 }) ->name('products');
 
 
-Route::get('/houses', [\App\Http\Controllers\HouseController::class, 'index']);
+Route::get('/houses', [HouseController::class, 'listTitles'])->name('houses.list');
+Route::get('/houses/{id}', [HouseController::class, 'show'])->name('houses.show');
 
 Route::get('secret', [SecretController::class, 'show']);
 
