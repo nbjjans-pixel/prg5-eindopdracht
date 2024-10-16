@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name'); //in backend ontzichtbaar de user hebben niet via form. Je kan via blaze kijken wie er ingelogd is
             $table->text('review');
-            $table->foreignId('user_id');
-            $table->timestamps();
+            $table->foreignId('user_id'); //eigenlijk house_id
+            $table->timestamps(); //delete moet als form met een post. '@method DELETE'
         });
     }
 
