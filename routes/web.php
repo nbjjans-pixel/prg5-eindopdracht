@@ -5,7 +5,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SecretController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HouseController;
+use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -35,6 +35,8 @@ Route::get('products/{id}', function(int $id) {
 Route::get('/houses', [\App\Http\Controllers\HouseController::class, 'index']);
 
 Route::get('secret', [SecretController::class, 'show']);
+
+Route::get('/home', [HomeController::class, 'index']);
 
 
 require __DIR__.'/auth.php';

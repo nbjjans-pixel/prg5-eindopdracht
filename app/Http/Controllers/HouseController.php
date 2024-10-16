@@ -9,7 +9,7 @@ class HouseController extends Controller
 {
     public function index()
     {
-        //normaal halen we informatei uit de database! dus niet -> enzo
+        //normaal halen we informatei uit de database! dus niet -> enzo (wel voor store ofzo)
         $house = House::all();
 
 

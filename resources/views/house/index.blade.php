@@ -11,12 +11,12 @@
 <h1>House details</h1>
 @foreach($house as $h)
     <p>
-        ID: {{ $h->id }} |
-        Street Name: {{ $h->street_name }} |
-        Description: {{ $h->description }} |
-        Price: {{ $h->price }} |
-        Surface: {{ $h->surface }} m² |
-        Status: {{ $h->status }} |
+        ID: {{ $h->id }} -
+        Street Name: {{ $h->title }} -
+        Description: {{ $h->description }} -
+        Price: {{ $h->price }} -
+        Surface: {{ $h->surface }} m² -
+        Status: {{ $h->status }} -
         Province: {{ $h->location }}
     </p>
 @endforeach

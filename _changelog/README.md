@@ -1,6 +1,36 @@
 # Changelog
 ## 15-10-2024
+Acties:
+- Geleerd over databases in phpstorm
+- Gewerkt met migrations
+- tabel aangemaakt met migrations
+- database gevuld met dummy data
+- data uit database weergegeven op webpagina
+- Read van Crud deels toegevoegd aan mijn webpagina
 
+Bronnen:
+- Chatgpt gebruikt om dummy data te maken prompt: kan jij meer dummy data voor mij aanmaken in deze format: autoincrement ID DUS LEEG ,Holland straat,wow dit is een huis in de hollandstraat voor 40000000000000 chillings,20,koop,1,noord-holland,leeg,1,1,, 
+- EN vervolg vraag: geef meer viariate in de straat naam en de prijs en omschrijving en proninvcie en of het koop/huur is
+
+Wat verliep goed:
+- Het volgen van de les en bij elke stap bij zijn met eigen project en heel de les mijn aandacht erbij kunnen houden
+
+
+Wat was lastig:
+- Deze dag had zijn uitdagingen maar ik zat nergens op vast.
+
+
+Wat heb ik geleerd:
+- Het is netjes om ENUM te gebruiken in je database MAAR makkelijker om met 1 en 2 enz te werken met intergers
+
+
+Screenshots:
+- nog niet
+
+
+Feedback:
+- Het maken van de ERD moet in een gepaste tool gemaakt zijn.
+- Vervang reviews voor categories in de ERD
 ## 14-10-2024
 
 
