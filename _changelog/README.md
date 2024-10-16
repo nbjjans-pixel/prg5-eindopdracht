@@ -1,4 +1,31 @@
 # Changelog
+
+## 16-10-2024
+Acties:
+- Gewerkt aan databases linken met een op veel relaties
+
+Bronnen:
+- Geen
+
+Wat verliep goed:
+- Het aanpassen aan een andere klas en gezien de omstandigheden nog steeds 
+
+
+Wat was lastig:
+- D
+
+
+Wat heb ik geleerd:
+- H
+
+
+Screenshots:
+- nog geen
+
+
+Feedback:
+- H
+
 ## 15-10-2024
 Acties:
 - Geleerd over databases in phpstorm
