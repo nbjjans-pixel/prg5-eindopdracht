@@ -11,7 +11,7 @@
 <p><strong>ID:</strong> {{ $house->id }}</p>
 <p><strong>Description:</strong> {{ $house->description }}</p>
 <p><strong>Price:</strong> {{ $house->price }}</p>
-<p><strong>Surface:</strong> {{ $house->type }} m²</p>
+<p><strong>Type:</strong> {{ $house->type }}</p>
 <p><strong>Status:</strong> {{ $house->status }}</p>
 <p><strong>Province:</strong> {{ $house->province }}</p>
 

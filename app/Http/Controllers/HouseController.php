@@ -10,13 +10,12 @@ class HouseController extends Controller
     public function listTitles()
     {
         $houses = House::all();
-        return view('house.list', compact('houses'));
+        return view('house.list', compact('houses')); //-> name functie nog toevoegen
     }
-
-
+    
     public function show($id)
     {
-        $house = House::findOrFail($id);
+        $house = House::find($id);
         return view('house.show', compact('house'));
     }
 }
