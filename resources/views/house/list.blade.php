@@ -8,6 +8,7 @@
 </head>
 <body>
 <h1>House Titles</h1>
+<a href="{{ route('house.create') }}">Voeg een nieuw huis toe</a>
     <ul>
         @foreach($houses as $house)
             <li>
@@ -17,5 +18,7 @@
             </li>
         @endforeach
     </ul>
+
+<a href="{{ route('home') }}">Back home</a>
 </body>
 </html>

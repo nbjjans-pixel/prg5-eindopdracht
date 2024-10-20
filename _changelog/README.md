@@ -1,5 +1,35 @@
 # Changelog
+## 20-10-2024
+Acties:
+- Gewerkt aan het maken van de create en store voor houses
+- begonnen met het aanpassen van de HousesController.
+- create functie toegevoegd met validatie van de columns.
+- Store functie toegevoegd.
+- de view (create.blade.php) aangemaakt en form gemaakt.
+- Tegen probleem aangelopen dat pagina ID niet gevonden kon worden als error werd aangegeven
+- Online gezocht en aan mede studenten om hulp gevraagd. Uiteindelijk lag het probleem in de volgorde van routes in mijn web.php
 
+Bronnen:
+- Geen
+
+Wat verliep goed:
+- Het aanpassen aan een andere klas en gezien de omstandigheden nog steeds
+
+
+Wat was lastig:
+- D
+
+
+Wat heb ik geleerd:
+- H
+
+
+Screenshots:
+- nog geen
+
+
+Feedback:
+- H
 ## 16-10-2024
 Acties:
 - Gewerkt aan databases linken met een op veel relaties

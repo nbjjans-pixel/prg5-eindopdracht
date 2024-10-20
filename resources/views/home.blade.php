@@ -23,5 +23,7 @@
     </div>
 </div>
 
+<a href="{{ route('houses.list') }}">View Houses</a>
+
 </body>
 </html>

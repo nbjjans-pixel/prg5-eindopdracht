@@ -9,7 +9,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HouseController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/dashboard', function () {
@@ -32,13 +32,16 @@ Route::get('products/{id}', function(int $id) {
     return view('products', ['id' => $id]);
 }) ->name('products');
 
-
+//VOLGORDE VAN ROUTES IS OOK BELANGRIJK!!!!!!!!!!!!!!!!!!!!
 Route::get('/houses', [HouseController::class, 'listTitles'])->name('houses.list');
+Route::get('/houses/create', [HouseController::class, 'create'])->name('house.create');
+Route::post('/houses', [HouseController::class, 'store'])->name('house.store');
 Route::get('/houses/{id}', [HouseController::class, 'show'])->name('houses.show');
+
 
 Route::get('secret', [SecretController::class, 'show']);
 
-Route::get('/home', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 
 require __DIR__.'/auth.php';
