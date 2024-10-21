@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Details page</title>
 </head>
+<x-app-layout>
 <body>
 <h1>{{ $house->title }} Details</h1>
 <p><strong>ID:</strong> {{ $house->id }}</p>
@@ -17,4 +18,5 @@
 
 <a href="{{ route('houses.list') }}">Back to List</a>
 </body>
+    </x-app-layout>
 </html>

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>House Titles</title>
 </head>
+<x-app-layout>
 <body>
-    <h1>House Titles</h1>
     <a href="{{ route('house.create') }}">Voeg een nieuw huis toe</a>
     <ul>
         @foreach($houses as $house)
@@ -21,4 +21,5 @@
 
     <a href="{{ route('home') }}">Back home</a>
 </body>
+    </x-app-layout>
 </html>

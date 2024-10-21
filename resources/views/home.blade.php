@@ -6,24 +6,25 @@
     <title>Home - Our Company</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
+<x-app-layout>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
 <div class="container mx-auto mt-10">
     <div class="bg-white rounded-lg shadow-md p-8">
         <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Our Real Estate Company</h1>
         <p class="text-gray-700 text-lg mb-6">
-            At NatHomes, we are dedicated to helping you find the perfect home. Whether you're looking to buy or rent, our mission is to provide you with the best options in the housing market.
+            At NatHomes, Helpen wij je perfecte huis te vinden. Of je nu wilt kopen of huren, onze missie is om jou de beste huizen te tonen.
         </p>
 
         <h2 class="text-2xl font-semibold text-gray-800 mb-2">Our Mission</h2>
         <p class="text-gray-700 text-lg">
-            Our mission is simple: to make the process of buying or renting a home as easy and transparent as possible. We offer a wide selection of homes, from affordable apartments to luxury estates, all designed to meet your needs.
+            Onze missie is simpel: het kopen van huizen zo makkelijk mogelijk te maken. Wij hebben een breed aanbod, van betaalbaar tot luxe, alles speciaal voor u gemaakt.
         </p>
+
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2"><a href="{{ route('houses.list') }}">Bekijk huizen</a></h2>
     </div>
 </div>
 
-<a href="{{ route('houses.list') }}">View Houses</a>
-
 </body>
+    </x-app-layout>
 </html>

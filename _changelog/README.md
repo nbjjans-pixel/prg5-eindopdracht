@@ -5,7 +5,11 @@ Acties:
 - Nummer 8 9 en 10 uit kunnen leggen uit de lijst
 - Hulp gevraagd over mijn probleem met de Create. Verder geholpen uit mijn loop zonder Error. Aangeraden op te zoeken waar de Error zat en die op de pagina weer te kunnen geven.
 - Database probleem opgelost. Probleem lag in 2 dingen user_id werd niet aangevuld omdat het niet verplicht was om in te loggen en category_id werd niet ingevuld waardoor query niet werkte.
-- Aangepaste app (lichtere kleuren) layout toegepast op mijn bestaande pages
+- House migration aangepast met toevoeging "$table->float('category_id')->nullable();" na rollback database en daarna weer migration was ahet probleem opgelost.
+- Aangepaste app (lichtere kleuren) layout toegepast op mijn bestaande pages. Dit hielp bij het overzicht houden van mijn totale voortgang.
+
+Bronnen:
+-https://www.cybertilt.nl/security/uitleg-encoding-hashing-encryption/
 
 ## 20-10-2024
 Acties:
