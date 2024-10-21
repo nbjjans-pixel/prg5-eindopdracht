@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('location', 100);
             $table->string('image', 255);
             $table->float('user_id');
-            $table->float('category_id');
+            $table->float('category_id')->nullable();
             $table->timestamps();
         });
     }

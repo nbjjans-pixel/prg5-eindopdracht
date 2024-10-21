@@ -7,8 +7,8 @@
     <title>House Titles</title>
 </head>
 <body>
-<h1>House Titles</h1>
-<a href="{{ route('house.create') }}">Voeg een nieuw huis toe</a>
+    <h1>House Titles</h1>
+    <a href="{{ route('house.create') }}">Voeg een nieuw huis toe</a>
     <ul>
         @foreach($houses as $house)
             <li>
@@ -19,6 +19,6 @@
         @endforeach
     </ul>
 
-<a href="{{ route('home') }}">Back home</a>
+    <a href="{{ route('home') }}">Back home</a>
 </body>
 </html>

@@ -13,7 +13,7 @@
 <p><strong>Price:</strong> {{ $house->price }}</p>
 <p><strong>Type:</strong> {{ $house->type }}</p>
 <p><strong>Status:</strong> {{ $house->status }}</p>
-<p><strong>Province:</strong> {{ $house->province }}</p>
+<p><strong>Provincie:</strong> {{ $house->location }}</p>
 
 <a href="{{ route('houses.list') }}">Back to List</a>
 </body>

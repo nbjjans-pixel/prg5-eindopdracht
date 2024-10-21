@@ -14,35 +14,41 @@ class HouseController extends Controller
 
     public function store(Request $request)
     {
+        // Check if the user is authenticated
+        if (!auth()->check()) {
+            return redirect()->route('login')->with('error', 'You must be logged in to add a house.');
+        }
 
-        // Error ligt in het checken of de gebruiker is ingelogd
+        // Validate the input fields
         $request->validate([
             'title' => 'required|max:255',
             'description' => 'required',
             'price' => 'required',
             'type' => 'required',
             'status' => 'required',
-            'location' => 'required'
+            'location' => 'required',
+             'category_id' => 'required'
         ]);
 
+        // Create a new House instance
         $house = new House();
-        $house->user_id = auth()->id();
+        $house->user_id = auth()->id(); // Get the authenticated user ID
         $house->title = $request->input('title');
         $house->description = $request->input('description');
         $house->price = $request->input('price');
         $house->type = $request->input('type');
         $house->status = $request->input('status');
         $house->location = $request->input('location');
-
         $house->image = $request->input('image') ?? 'https://default-image.url';
+        $house->category_id = $request->input('category_id');
 
-        $house->created_at = Date::now();
-        $house->updated_at = Date::now();
 
+        // Save the house to the database
         $house->save();
 
         return redirect()->route('houses.list');
     }
+
 
 
     public function listTitles()
