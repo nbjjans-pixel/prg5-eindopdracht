@@ -12,7 +12,7 @@
                     {{ __("You're logged in!") }}
                 </div>
             </div>
+            <a href="{{ route('home') }}">Back home</a>
         </div>
     </div>
-    <a href="{{ route('home') }}">Back home</a> <!-- nog css'en!-->
 </x-app-layout>
