@@ -3,6 +3,7 @@
 <head>
     <title>Voeg een nieuw huis toe</title>
 </head>
+<x-app-layout>
 <body>
 <h1>Voeg een nieuw huis toe</h1>
 <form action="{{ route('house.store') }}" method="POST">
@@ -50,4 +51,5 @@
     </div>
 </form>
 </body>
+    </x-app-layout>
 </html>

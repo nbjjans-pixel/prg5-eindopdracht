@@ -14,12 +14,10 @@ class HouseController extends Controller
 
     public function store(Request $request)
     {
-        // Check if the user is authenticated
         if (!auth()->check()) {
             return redirect()->route('login')->with('error', 'You must be logged in to add a house.');
         }
 
-        // Validate the input fields
         $request->validate([
             'title' => 'required|max:255',
             'description' => 'required',
@@ -30,9 +28,8 @@ class HouseController extends Controller
              'category_id' => 'required'
         ]);
 
-        // Create a new House instance
         $house = new House();
-        $house->user_id = auth()->id(); // Get the authenticated user ID
+        $house->user_id = auth()->id();
         $house->title = $request->input('title');
         $house->description = $request->input('description');
         $house->price = $request->input('price');
