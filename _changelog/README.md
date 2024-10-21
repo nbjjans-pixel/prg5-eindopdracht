@@ -9,6 +9,9 @@ Acties:
 - Aangepaste app (lichtere kleuren) layout toegepast op mijn bestaande pages. Dit hielp bij het overzicht houden van mijn totale voortgang.
 - Delete functie in HouseController toegevoegd
 - Delete form in list.blade.php toegevoegd
+- Edit en Update in HouseController toegevoegd
+- edit.blade.php toegevoegd
+- Edit pagina werkend gemaakt
 
 Bronnen:
 -https://www.cybertilt.nl/security/uitleg-encoding-hashing-encryption/
