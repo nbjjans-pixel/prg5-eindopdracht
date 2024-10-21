@@ -1,4 +1,10 @@
 # Changelog
+## 21-10-2024
+Acties:
+- Uitleg gekregen over OWASP Top 10
+- Nummer 8 9 en 10 uit kunnen leggen uit de lijst
+- Hulp gevraagd over mijn probleem met de Create. Verder geholpen uit mijn loop zonder Error. Aangeraden op te zoeken waar de Error zat en die op de pagina weer te kunnen geven.
+
 ## 20-10-2024
 Acties:
 - Gewerkt aan het maken van de create en store voor houses
