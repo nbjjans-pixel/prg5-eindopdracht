@@ -46,6 +46,15 @@ class HouseController extends Controller
         return redirect()->route('houses.list');
     }
 
+    public function destroy($id)
+    {
+        $house = House::find($id);
+        $house->delete();
+
+        return redirect()->route('houses.list');
+    }
+
+
 
 
     public function listTitles()

@@ -37,11 +37,14 @@ Route::get('/houses', [HouseController::class, 'listTitles'])->name('houses.list
 Route::get('/houses/create', [HouseController::class, 'create'])->name('house.create');
 Route::post('/houses', [HouseController::class, 'store'])->name('house.store');
 Route::get('/houses/{id}', [HouseController::class, 'show'])->name('houses.show');
+Route::delete('/houses/{id}', [HouseController::class, 'destroy'])->name('houses.destroy');
 
 
 Route::get('secret', [SecretController::class, 'show']);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+
 
 
 require __DIR__.'/auth.php';
