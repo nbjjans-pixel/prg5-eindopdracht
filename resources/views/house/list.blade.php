@@ -17,17 +17,20 @@
                     {{ $house->title }}
                 </a>
 
-                <!-- delete-->
+                <!-- edit -->
+                <a href="{{ route('houses.edit', $house->id) }}">Bewerken</a>
+
+                <!-- delete -->
                 <form action="{{ route('houses.destroy', $house->id) }}" method="POST" style="display:inline;">
-                    @csrf                 <!-- tegen 419 -->
-                    @method('DELETE')                <!-- voor laravel om te zien dat het een delete request is -->
-                    <button type="submit" onclick="return confirm('Weet je zeker dat je dit huis wilt verwijderen?')">Delete</button>
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" onclick="return confirm('Weet je zeker dat je dit huis wilt verwijderen?')">Verwijderen</button>
                 </form>
             </li>
         @endforeach
     </ul>
 
-    <a href="{{ route('home') }}">Back home</a>
+    <a href="{{ route('home') }}">Terug naar home</a>
     </body>
 </x-app-layout>
 </html>

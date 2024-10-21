@@ -10,8 +10,8 @@
 <body>
 <h1>{{ $house->title }} Details</h1>
 <p><strong>ID:</strong> {{ $house->id }}</p>
-<p><strong>Description:</strong> {{ $house->description }}</p>
-<p><strong>Price:</strong> {{ $house->price }}</p>
+<p><strong>Beschrijving:</strong> {{ $house->description }}</p>
+<p><strong>Prijs:</strong> {{ $house->price }}</p>
 <p><strong>Type:</strong> {{ $house->type }}</p>
 <p><strong>Status:</strong> {{ $house->status }}</p>
 <p><strong>Provincie:</strong> {{ $house->location }}</p>

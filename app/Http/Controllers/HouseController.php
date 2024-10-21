@@ -54,7 +54,38 @@ class HouseController extends Controller
         return redirect()->route('houses.list');
     }
 
+    public function edit($id)
+    {
+        $house = House::find($id);
+        return view('house.edit', compact('house'));
+    }
 
+    // Methode voor het opslaan van de wijzigingen
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'title' => 'required|max:255',
+            'description' => 'required',
+            'price' => 'required',
+            'type' => 'required',
+            'status' => 'required',
+            'location' => 'required'
+        ]);
+
+        $house = House::find($id);
+        $house->title = $request->input('title');
+        $house->description = $request->input('description');
+        $house->price = $request->input('price');
+        $house->type = $request->input('type');
+        $house->status = $request->input('status');
+        $house->location = $request->input('location');
+        $house->image = $request->input('image') ?? $house->image; // Behoud de oude afbeelding als geen nieuwe wordt opgegeven
+        $house->updated_at = Date::now();
+
+        $house->save();
+
+        return redirect()->route('houses.list');
+    }
 
 
     public function listTitles()
