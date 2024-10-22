@@ -7,14 +7,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class House extends Model
 {
-    protected $fillable = [
-        'title',
-        'description',
-        'price',
-        'type',
-        'status',
-        'location',
-        'image',
-    ];
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+//    protected $fillable = [
+//        'title',
+//        'description',
+//        'price',
+//        'type',
+//        'status',
+//        'location',
+//        'image',
+//    ];
 }
 

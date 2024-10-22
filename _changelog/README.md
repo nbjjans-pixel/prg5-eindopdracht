@@ -1,4 +1,5 @@
 # Changelog
+## 22-10-2024
 ## 21-10-2024
 Acties:
 - Uitleg gekregen over OWASP Top 10

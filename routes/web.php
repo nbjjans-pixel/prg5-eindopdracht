@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SecretController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -37,6 +38,9 @@ Route::get('/houses/{id}', [HouseController::class, 'show'])->name('houses.show'
 Route::delete('/houses/{id}', [HouseController::class, 'destroy'])->name('houses.destroy');
 Route::get('/houses/{id}/edit', [HouseController::class, 'edit'])->name('houses.edit');
 Route::put('/houses/{id}', [HouseController::class, 'update'])->name('house.update');
+Route::get('/houses/{house}/review/create', [ReviewController::class, 'create'])->name('reviews.create');
+Route::post('/houses/{house}/reviews', [ReviewController::class, 'store'])->name('reviews.store');
+
 
 Route::get('secret', [SecretController::class, 'show']);
 
