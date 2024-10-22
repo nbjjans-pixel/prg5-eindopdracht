@@ -1,5 +1,9 @@
 # Changelog
 ## 22-10-2024
+Actie:
+- Presentatie les OTAP thuis doorgenomen.
+- Les 6, 1 op veel relatie opgave ingehaald en gemaakt. Reviews zijn nu mogelijk op mijn pagina
+- cascadeOnDelete() toegevoegd in de migration van reviews tabel.
 ## 21-10-2024
 Acties:
 - Uitleg gekregen over OWASP Top 10
