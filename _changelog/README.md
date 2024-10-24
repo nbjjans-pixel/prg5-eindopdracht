@@ -1,4 +1,9 @@
 # Changelog
+## 23-10-2024
+Actie:
+- Presentatie uitleg mondeling
+- Migration database van users aangepast met status voor admin
+
 ## 22-10-2024
 Actie:
 - Presentatie les OTAP thuis doorgenomen.
