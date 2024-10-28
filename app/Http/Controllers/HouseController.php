@@ -87,10 +87,14 @@ class HouseController extends Controller
         return redirect()->route('houses.list');
     }
 
-
-    public function listTitles()
+        public function listTitles(Request $request)
     {
-        $houses = House::all();
+        $search = $request->input('search');
+
+        $houses = House::when($search, function ($query, $search) {
+            return $query->where('title', 'like', "%{$search}%");
+        })->get();
+
         return view('house.list', compact('houses'));
     }
 

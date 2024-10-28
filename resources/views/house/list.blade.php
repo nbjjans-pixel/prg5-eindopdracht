@@ -9,6 +9,13 @@
 <x-app-layout>
     <body>
     <a href="{{ route('house.create') }}">Voeg een nieuw huis toe</a>
+
+    <!-- zoek-->
+    <form action="{{ route('houses.list') }}" method="GET">
+        <input type="text" name="search" placeholder="Zoek op titel" value="{{ request('search') }}">
+        <button type="submit">Zoeken</button>
+    </form>
+
     <ul>
         @foreach($houses as $house)
             <li>
