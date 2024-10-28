@@ -1,9 +1,17 @@
 # Changelog
+## 28-10-2024
+Actie:
+
+- Bewerken en verwijderen een admin only mogelijkheid gemaakt.
+- 
 ## 23-10-2024
 Actie:
 - Presentatie uitleg mondeling
 - Migration database van users aangepast met status voor admin
+- Research Eloquent gedaan
 
+Bronnen:
+- https://laravel.com/docs/11.x/eloquent
 ## 22-10-2024
 Actie:
 - Presentatie les OTAP thuis doorgenomen.

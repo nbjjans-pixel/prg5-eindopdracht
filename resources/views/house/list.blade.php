@@ -18,6 +18,7 @@
                 </a>
 
                 <!-- edit -->
+                @if(auth()->user() && auth()->user()->status == 1)
                 <a href="{{ route('houses.edit', $house->id) }}">Bewerken</a>
 
                 <!-- delete -->
@@ -26,6 +27,7 @@
                     @method('DELETE')
                     <button type="submit" onclick="return confirm('Weet je zeker dat je dit huis wilt verwijderen?')">Verwijderen</button>
                 </form>
+                @endif
             </li>
         @endforeach
     </ul>
