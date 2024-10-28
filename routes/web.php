@@ -41,6 +41,12 @@ Route::put('/houses/{id}', [HouseController::class, 'update'])->name('house.upda
 Route::get('/houses/{house}/review/create', [ReviewController::class, 'create'])->name('reviews.create');
 Route::post('/houses/{house}/reviews', [ReviewController::class, 'store'])->name('reviews.store');
 
+//addmin
+Route::get('/admin/houses', [HouseController::class, 'adminIndex'])->name('admin.houses.index');
+Route::get('/admin/houses/{id}/edit', [HouseController::class, 'edit'])->name('admin.houses.edit');
+Route::put('/admin/houses/{id}', [HouseController::class, 'update'])->name('admin.houses.update');
+Route::delete('/admin/houses/{id}', [HouseController::class, 'destroy'])->name('admin.houses.destroy');
+
 
 Route::get('secret', [SecretController::class, 'show']);
 

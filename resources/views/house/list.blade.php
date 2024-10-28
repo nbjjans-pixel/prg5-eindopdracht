@@ -24,17 +24,17 @@
                     {{ $house->title }}
                 </a>
 
-                <!-- edit -->
-                @if(auth()->user() && auth()->user()->status == 1)
-                <a href="{{ route('houses.edit', $house->id) }}">Bewerken</a>
+{{--                <!-- edit -->--}}
+{{--                @if(auth()->user() && auth()->user()->status == 1)--}}
+{{--                <a href="{{ route('houses.edit', $house->id) }}">Bewerken</a>--}}
 
-                <!-- delete -->
-                <form action="{{ route('houses.destroy', $house->id) }}" method="POST" style="display:inline;">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" onclick="return confirm('Weet je zeker dat je dit huis wilt verwijderen?')">Verwijderen</button>
-                </form>
-                @endif
+{{--                <!-- delete -->--}}
+{{--                <form action="{{ route('houses.destroy', $house->id) }}" method="POST" style="display:inline;">--}}
+{{--                    @csrf--}}
+{{--                    @method('DELETE')--}}
+{{--                    <button type="submit" onclick="return confirm('Weet je zeker dat je dit huis wilt verwijderen?')">Verwijderen</button>--}}
+{{--                </form>--}}
+{{--                @endif--}}
             </li>
         @endforeach
     </ul>
