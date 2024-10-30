@@ -3,7 +3,7 @@
 Actie:
 
 - Bewerken en verwijderen een admin only mogelijkheid gemaakt.
-- 
+- Admin page aangemaakt / originele manier van verwijderen/editen verplaatst naar deze pagina
 ## 23-10-2024
 Actie:
 - Presentatie uitleg mondeling
