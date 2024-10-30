@@ -111,5 +111,22 @@ class HouseController extends Controller
         return view('admin.houses.index', compact('houses'));
     }
 
+    public function favorite($houseId)
+    {
+        $user = auth()->user();
+        $user->favorites()->attach($houseId);
+
+        return redirect()->back()->with('success', 'House added to favorites.');
+    }
+
+    public function unfavorite($houseId)
+    {
+        $user = auth()->user();
+        $user->favorites()->detach($houseId);
+
+        return redirect()->back()->with('success', 'House removed from favorites.');
+    }
+
+
 }
 

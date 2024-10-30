@@ -45,4 +45,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+// OOK NOG IN HOUSE DOEN!!
+    public function favorites()
+    {
+        return $this->belongsToMany(House::class, 'favorites');
+    }
+
 }

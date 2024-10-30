@@ -40,6 +40,9 @@ Route::get('/houses/{id}/edit', [HouseController::class, 'edit'])->name('houses.
 Route::put('/houses/{id}', [HouseController::class, 'update'])->name('house.update');
 Route::get('/houses/{house}/review/create', [ReviewController::class, 'create'])->name('reviews.create');
 Route::post('/houses/{house}/reviews', [ReviewController::class, 'store'])->name('reviews.store');
+Route::post('/houses/{house}/favorite', [HouseController::class, 'favorite'])->name('houses.favorite');
+Route::delete('/houses/{house}/unfavorite', [HouseController::class, 'unfavorite'])->name('houses.unfavorite');
+
 
 //addmin
 Route::get('/admin/houses', [HouseController::class, 'adminIndex'])->name('admin.houses.index');

@@ -19,12 +19,27 @@
     <ul>
         @foreach($houses as $house)
             <li>
-                <!-- list -->
                 <a href="{{ route('houses.show', $house->id) }}">
                     {{ $house->title }}
                 </a>
 
-{{--                <!-- edit -->--}}
+                @if(auth()->user() && auth()->user()->favorites->contains($house->id))
+                    <form action="{{ route('houses.unfavorite', $house->id) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit">Remove from Favorites</button>
+                    </form>
+                @else
+                    <form action="{{ route('houses.favorite', $house->id) }}" method="POST">
+                        @csrf
+                        <button type="submit">Add to Favorites</button>
+                    </form>
+                @endif
+            </li>
+            @endforeach
+
+
+            {{--                <!-- edit -->--}}
 {{--                @if(auth()->user() && auth()->user()->status == 1)--}}
 {{--                <a href="{{ route('houses.edit', $house->id) }}">Bewerken</a>--}}
 
@@ -35,8 +50,6 @@
 {{--                    <button type="submit" onclick="return confirm('Weet je zeker dat je dit huis wilt verwijderen?')">Verwijderen</button>--}}
 {{--                </form>--}}
 {{--                @endif--}}
-            </li>
-        @endforeach
     </ul>
 
     <a href="{{ route('home') }}">Terug naar home</a>
