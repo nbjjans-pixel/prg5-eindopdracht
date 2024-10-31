@@ -6,7 +6,7 @@
 - github wilt ook niet meer updaten
 - Docent om hulp gevraagd bij dit probleem zeker omdat het mij moeite gaat brengen met het presenteren van het project laat staan het afmaken.
 - Project geopend op andere PC hier is het geen probleem
-- V
+- Verder werken op deze PC en elke change pushen/pullen om op andere pc live prview te hebben (omdat ik op deze pc geen extra instalateis heb gedaan om dit te runnen)
 ## 28-10-2024
 Actie:
 
