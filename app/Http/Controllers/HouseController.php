@@ -25,7 +25,7 @@ class HouseController extends Controller
             'type' => 'required',
             'status' => 'required',
             'location' => 'required',
-             'category_id' => 'required'
+            'category_id' => 'required'
         ]);
 
         $house = new House();
@@ -129,4 +129,3 @@ class HouseController extends Controller
 
 
 }
-
