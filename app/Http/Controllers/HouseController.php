@@ -104,7 +104,7 @@ class HouseController extends Controller
     public function adminIndex()
     {
         if (!auth()->check() || auth()->user()->status != 1) {
-            return redirect()->route('home')->with('error', 'Toegang geweigerd.'); // Redirect naar home als je geen admin bent
+            return redirect()->route('home'); // naar home als je geen admin bent
         }
 
         $houses = House::all();
@@ -116,7 +116,7 @@ class HouseController extends Controller
         $user = auth()->user();
         $user->favorites()->attach($houseId);
 
-        return redirect()->back()->with('success', 'House added to favorites.');
+        return redirect()->back();
     }
 
     public function unfavorite($houseId)
@@ -124,7 +124,7 @@ class HouseController extends Controller
         $user = auth()->user();
         $user->favorites()->detach($houseId);
 
-        return redirect()->back()->with('success', 'House removed from favorites.');
+        return redirect()->back();
     }
 
 
