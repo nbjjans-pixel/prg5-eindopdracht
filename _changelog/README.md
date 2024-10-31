@@ -7,6 +7,11 @@
 - Docent om hulp gevraagd bij dit probleem zeker omdat het mij moeite gaat brengen met het presenteren van het project laat staan het afmaken.
 - Op andere PC zelfde project opgestart daar geen problemen. Kort daarop gewerkt maar geen extra instalaties op gedaan waardoor er problemen waren.
 - Toch nog gelukt filteren op categorën toe te voegen erg trost maar probleem is nog steeds aanwezig wat erg iriterend en demotiverend is.
+- 
+======= (Update vanuit andere pc voordat ik de beslissing had gemaakt om zelfd met de bug op mijn laptop door te gaan)=======
+- Project geopend op andere PC hier is het geen probleem
+- Verder werken op deze PC en elke change pushen/pullen om op andere pc live prview te hebben (omdat ik op deze pc geen extra instalateis heb gedaan om dit te runnen)
+
 ## 28-10-2024
 Actie:
 
