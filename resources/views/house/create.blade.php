@@ -43,7 +43,7 @@
         <input type="text" name="image" id="image" required>
     </div>
     <div>
-        <label for="category_id">category_id_aanpassen:</label>
+        <label for="category_id">Aantal kamers:</label>
         <input type="number" name="category_id" required>
     </div>
     <div>

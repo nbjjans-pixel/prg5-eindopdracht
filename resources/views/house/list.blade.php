@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>House Titles</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -25,6 +25,16 @@
                 value="{{ request('search') }}"
                 class="flex-grow px-4 py-2 border rounded-l-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
+
+        <!-- Dropdown voor categorie -->
+        <select name="category_id" class="mx-2 px-4 py-2 border rounded border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="">Aantal kamers</option>
+            @for ($i = 1; $i <= 10; $i++)
+                <option value="{{ $i }}" {{ request('category_id') == $i ? 'selected' : '' }}>{{ $i }}</option>
+            @endfor
+        </select>
+
+
         <button
                 type="submit"
                 class="px-4 py-2 bg-blue-500 text-white rounded-r-md hover:bg-blue-600 transition duration-200">
@@ -76,4 +86,3 @@
 
     </body>
 </x-app-layout>
-</html>

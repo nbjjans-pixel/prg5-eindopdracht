@@ -1,14 +1,14 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Models\House;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Date;
 
 class HouseController extends Controller
 {
-
-    public function create(){
+    public function create()
+    {
         return view('house.create');
     }
 
@@ -38,7 +38,6 @@ class HouseController extends Controller
         $house->location = $request->input('location');
         $house->image = $request->input('image') ?? 'https://default-image.url';
         $house->category_id = $request->input('category_id');
-
 
         // Save the house to the database
         $house->save();
@@ -79,21 +78,22 @@ class HouseController extends Controller
         return redirect()->route('admin.houses.index')->with('success', 'Status succesvol bijgewerkt.');
     }
 
-
     public function listTitles(Request $request)
     {
         $search = $request->input('search');
+        $categoryId = $request->input('category_id');
 
-        // Filter huizen op basis van actieve status
         $houses = House::when($search, function ($query, $search) {
             return $query->where('title', 'like', "%{$search}%");
         })
+            ->when($categoryId, function ($query, $categoryId) {
+                return $query->where('category_id', $categoryId);
+            })
             ->where('status', 1)
             ->get();
 
         return view('house.list', compact('houses'));
     }
-
 
     public function show($id)
     {
@@ -126,6 +126,4 @@ class HouseController extends Controller
 
         return redirect()->back();
     }
-
-
 }
