@@ -5,6 +5,8 @@
 - Grote vervelende bug waardoor php storm elke keer mij uit mijn bestanden gooit en weer terug zet naar de grootste map in mijn project
 - github wilt ook niet meer updaten
 - Docent om hulp gevraagd bij dit probleem zeker omdat het mij moeite gaat brengen met het presenteren van het project laat staan het afmaken.
+- Op andere PC zelfde project opgestart daar geen problemen. Kort daarop gewerkt maar geen extra instalaties op gedaan waardoor er problemen waren.
+- Toch nog gelukt filteren op categorën toe te voegen erg trost maar probleem is nog steeds aanwezig wat erg iriterend en demotiverend is.
 ## 28-10-2024
 Actie:
 
