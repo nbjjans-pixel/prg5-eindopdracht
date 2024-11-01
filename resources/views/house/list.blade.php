@@ -63,6 +63,27 @@
                 <a href="{{ route('houses.show', $house->id) }}" class="text-lg font-semibold text-gray-800 hover:text-blue-500 transition">
                     {{ $house->title }}
                 </a>
+                <!-- Link om huis aan te passen -->
+                @if(auth()->user()->id == $house->user_id || auth()->user()->status == 1)
+                    <div class="flex items-center space-x-2">
+                        <a href="{{ route('houses.edit', $house->id) }}" class="ml-4 px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-200">
+                            Aanpassen
+                        </a>
+
+                        <!-- Delete-knop, alleen zichtbaar als de gebruiker het huis heeft aangemaakt -->
+                        @if(auth()->user()->id == $house->user_id)
+                            <form action="{{ route('houses.destroy', $house->id) }}" method="POST" class="ml-4">
+                                @csrf
+                                @method('DELETE')
+                                <button
+                                        type="submit"
+                                        class="px-3 py-1 bg-red-500 text-white rounded hover:bg-blue-600 transition duration-200">
+                                    Verwijder huis
+                                </button>
+                            </form>
+                        @endif
+                    </div>
+                @endif
 
                 <!-- Favorieten knoppen -->
                 <div class="flex items-center space-x-2">
@@ -90,6 +111,8 @@
             </li>
         @endforeach
     </ul>
+
+
 
     <!-- Terug naar home link -->
     <a href="{{ route('home') }}" class="mt-8 text-blue-500 hover:underline">

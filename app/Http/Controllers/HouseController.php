@@ -78,14 +78,14 @@ class HouseController extends Controller
         $house = House::find($id);
 
         if (!$house) {
-            return redirect()->route('admin.houses.index')->with('error', 'Huis niet gevonden.');
+            return redirect()->route('admin.houses.index');
         }
 
         // Wijzig de status van het huis
         $house->status = $request->input('status');
         $house->save();
 
-        return redirect()->route('admin.houses.index')->with('success', 'Status succesvol bijgewerkt.');
+        return redirect()->route('admin.houses.index');
     }
 
     public function listTitles(Request $request)

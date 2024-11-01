@@ -2,6 +2,9 @@
 ## 01-11-2024
 - PHP storm bug opgelost door hulp van docent. Probleem lag in settings dat mijn bestand verbonden was met onedrive.
 - Diepere validatie dmv ELoquent toegevoegd door te checken op reviews.
+- Favorieten toegevoegd als searchcriteria
+- Als gast kan je nu de Home pagina zien zonder te crashen.
+- De user die het huis heeft aangemaakt kan deze nu aanpassen en verwijderen
 
 ## 31-10-2024
 - Geprobeerd te werken aan de diepere validatie
