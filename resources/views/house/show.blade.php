@@ -12,11 +12,11 @@
     <p><strong>ID:</strong> {{ $house->id }}</p>
     <p><strong>Beschrijving:</strong> {{ $house->description }}</p>
     <p><strong>Prijs:</strong> {{ $house->price }}</p>
+    <p><strong>Aantal kamers:</strong> {{ $house->category_id }}</p>
     <p><strong>Type:</strong> {{ $house->type }}</p>
-    <p><strong>Status:</strong> {{ $house->status }}</p>
     <p><strong>Provincie:</strong> {{ $house->location }}</p>
-
-    <h2>Reviews</h2>
+    <h2>--------</h2>
+    <h2><strong>Reviews</strong></h2>
     <ul>
         @foreach($house->reviews as $review)
             <li>

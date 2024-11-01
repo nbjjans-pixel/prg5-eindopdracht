@@ -23,7 +23,6 @@
         Voeg een nieuw huis toe
     </a>
 
-    <!-- Zoekformulier -->
     <form action="{{ route('houses.list') }}" method="GET" class="flex mb-6 w-full max-w-md">
         <input
                 type="text"
@@ -41,6 +40,11 @@
             @endfor
         </select>
 
+        <!-- Checkbox voor alleen favorieten -->
+        <label class="flex items-center space-x-2">
+            <input type="checkbox" name="favorites_only" value="1" {{ request('favorites_only') ? 'checked' : '' }}>
+            <p>Alleen favorieten</p>
+        </label>
 
         <button
                 type="submit"
@@ -48,6 +52,7 @@
             Zoeken
         </button>
     </form>
+
 
     <!-- Huizenlijst -->
     <ul class="w-full max-w-2xl space-y-4">

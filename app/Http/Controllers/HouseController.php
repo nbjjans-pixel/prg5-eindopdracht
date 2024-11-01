@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 
 class HouseController extends Controller
 {
-// In HouseController.php
     public function create()
     {
         $user = auth()->user();
@@ -93,18 +92,34 @@ class HouseController extends Controller
     {
         $search = $request->input('search');
         $categoryId = $request->input('category_id');
+        $favoritesOnly = $request->input('favorites_only');
 
-        $houses = House::when($search, function ($query, $search) {
-            return $query->where('title', 'like', "%{$search}%");
-        })
-            ->when($categoryId, function ($query, $categoryId) {
-                return $query->where('category_id', $categoryId);
-            })
-            ->where('status', 1)
-            ->get();
+        $houses = House::query();
+
+        // Zoek
+        if ($search) {
+            $houses->where('title', 'like', "%{$search}%");
+        }
+
+        // Filter categorie
+        if ($categoryId) {
+            $houses->where('category_id', $categoryId);
+        }
+
+        // favorieten
+        if ($favoritesOnly && auth()->check()) {
+            $user = auth()->user();
+            $houses->whereIn('id', $user->favorites->pluck('id'));
+        }
+
+        // actieve huizen tonen
+        $houses->where('status', 1);
+
+        $houses = $houses->get();
 
         return view('house.list', compact('houses'));
     }
+
 
     public function show($id)
     {
