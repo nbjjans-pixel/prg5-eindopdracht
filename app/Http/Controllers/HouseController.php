@@ -1,16 +1,27 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Review;
 use App\Models\House;
 use Illuminate\Http\Request;
 
 class HouseController extends Controller
 {
+// In HouseController.php
     public function create()
     {
+        $user = auth()->user();
+
+        $reviewCount = Review::where('user_id', $user->id)->count();
+        //count voor test !veranderen!
+        if ($reviewCount < 1) {
+            return redirect()->route('houses.list') //error wordt doorgegeven in list.blade.php
+                ->with('error', 'Je moet minstens één review schrijven voordat je een huis kunt toevoegen.');
+        }
+
         return view('house.create');
     }
+
 
     public function store(Request $request)
     {

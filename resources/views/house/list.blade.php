@@ -11,6 +11,13 @@
     <body class="bg-gray-100 flex flex-col items-center py-8">
     <h1 class="text-3xl font-bold text-gray-800 mb-6">Huizenlijst</h1>
 
+    <!-- Foutmelding -->
+    @if(session('error'))
+        <div class="mb-4 px-4 py-2 bg-red-500 text-white rounded">
+            {{ session('error') }}
+        </div>
+    @endif
+
     <!-- Voeg nieuw huis toe -->
     <a href="{{ route('house.create') }}" class="mb-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-200">
         Voeg een nieuw huis toe
