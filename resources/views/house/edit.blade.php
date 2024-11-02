@@ -34,11 +34,6 @@
             <input type="text" id="location" name="location" value="{{ old('location', $house->location) }}" required>
         </div>
 
-        <div>
-            <label for="image">Afbeelding URL</label>
-            <input type="text" id="image" name="image" value="{{ old('image', $house->image) }}">
-        </div>
-
         <button type="submit">Huis Bijwerken</button>
     </form>
 

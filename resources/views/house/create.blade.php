@@ -39,10 +39,6 @@
         <input type="text" name="location" id="location" required>
     </div>
     <div>
-        <label for="image">Afbeelding URL:</label>
-        <input type="text" name="image" id="image" required>
-    </div>
-    <div>
         <label for="category_id">Aantal kamers:</label>
         <input type="number" name="category_id" required>
     </div>

@@ -25,7 +25,7 @@ class HouseController extends Controller
     public function store(Request $request)
     {
         if (!auth()->check()) {
-            return redirect()->route('login')->with('error', 'You must be logged in to add a house.');
+            return redirect()->route('login');
         }
 
         $request->validate([
