@@ -34,7 +34,7 @@ class ReviewController extends Controller
         $review->review = $request->input('review');
         $review->rating = $request->input('rating');
         $review->house_id = $house->id;
-        $review->user_id = auth()->id(); // De huidige ingelogde gebruiker
+        $review->user_id = auth()->id();
 
         $review->save();
 

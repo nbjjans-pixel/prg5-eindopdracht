@@ -44,6 +44,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/houses/{id}/edit', [HouseController::class, 'edit'])->name('admin.houses.edit');
     Route::put('/admin/houses/{id}', [HouseController::class, 'update'])->name('admin.houses.update');
     Route::delete('/admin/houses/{id}', [HouseController::class, 'destroy'])->name('admin.houses.destroy');
+    Route::put('/admin/houses/{id}/status', [HouseController::class, 'updateStatus'])->name('admin.houses.updateStatus');
+
 });
 
 // overig van oefenen

@@ -21,7 +21,7 @@
                 Onze missie is simpel: het kopen van huizen zo makkelijk mogelijk te maken. Wij hebben een breed aanbod, van betaalbaar tot luxe, speciaal voor jou samengesteld.
             </p>
 
-            <!-- Inlogstatus checken -->
+            <!-- asl ingelogd geef link naar houses.list aan zoniet geef register/login -->
             <div class="mt-4">
                 @auth
                     <a href="{{ route('houses.list') }}" class="text-blue-600 hover:underline">Bekijk huizen</a>

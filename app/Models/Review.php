@@ -10,6 +10,7 @@ class Review extends Model
 {
     public function house()
     {
+        //één review hoort bij één huis
         return $this->belongsTo(House::class);
     }
 

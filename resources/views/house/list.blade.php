@@ -11,7 +11,7 @@
     <body class="bg-gray-100 flex flex-col items-center py-8">
     <h1 class="text-3xl font-bold text-gray-800 mb-6">Huizenlijst</h1>
 
-    <!-- Foutmelding -->
+    <!-- geeft de foutmelding weer op de pagina met de with->('aangegeven fout') in de controller-->
     @if(session('error'))
         <div class="mb-4 px-4 py-2 bg-red-500 text-white rounded">
             {{ session('error') }}
@@ -32,7 +32,7 @@
                 class="flex-grow px-4 py-2 border rounded-l-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
 
-        <!-- Dropdown voor categorie -->
+        <!-- Dropdown voor aantal huizen -->
         <select name="category_id" class="mx-2 px-4 py-2 border rounded border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
             <option value="">Aantal kamers</option>
             @for ($i = 1; $i <= 10; $i++)
@@ -70,7 +70,7 @@
                             Aanpassen
                         </a>
 
-                        <!-- Delete-knop, alleen zichtbaar als de gebruiker het huis heeft aangemaakt -->
+                        <!-- Delete-knop -->
                         @if(auth()->user()->id == $house->user_id)
                             <form action="{{ route('houses.destroy', $house->id) }}" method="POST" class="ml-4">
                                 @csrf
@@ -85,7 +85,7 @@
                     </div>
                 @endif
 
-                <!-- Favorieten knoppen -->
+                <!-- Favorieten -->
                 <div class="flex items-center space-x-2">
                     @if(auth()->user() && auth()->user()->favorites->contains($house->id))
                         <form action="{{ route('houses.unfavorite', $house->id) }}" method="POST">

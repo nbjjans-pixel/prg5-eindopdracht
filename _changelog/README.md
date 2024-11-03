@@ -1,4 +1,13 @@
 # Changelog
+## 03-11-2024
+- Deeplinken beveiliging over edit opgelost probleem was precisie in de === omdat in mijn migration het een ander datatype was.
+- Activeren / deactiveren bug
+- Comments toevoegen voor assistentie tijdens toetsing.
+- Gestopt met opschonen bestanden na verwijderen bestand Controller.php waardoor project stopte met werken.
+
+## 02-11-2024
+- Deeplinken als gast laat niet meer error zien en stuurt terug naar homepagina
+- Deeplink beveiliging over edit proberen te zetten alleen liep steeds vast, morgen afmaken.
 ## 01-11-2024
 - PHP storm bug opgelost door hulp van docent. Probleem lag in settings dat mijn bestand verbonden was met onedrive.
 - Diepere validatie dmv ELoquent toegevoegd door te checken op reviews.
@@ -63,27 +72,6 @@ Acties:
 - Tegen probleem aangelopen dat pagina ID niet gevonden kon worden als error werd aangegeven
 - Online gezocht en aan mede studenten om hulp gevraagd. Uiteindelijk lag het probleem in de volgorde van routes in mijn web.php
 
-Bronnen:
-- Geen
-
-Wat verliep goed:
-- Het aanpassen aan een andere klas en gezien de omstandigheden nog steeds
-
-
-Wat was lastig:
-- D
-
-
-Wat heb ik geleerd:
-- H
-
-
-Screenshots:
-- nog geen
-
-
-Feedback:
-- H
 ## 16-10-2024
 Acties:
 - Gewerkt aan databases linken met een op veel relaties
@@ -94,21 +82,6 @@ Bronnen:
 Wat verliep goed:
 - Het aanpassen aan een andere klas en gezien de omstandigheden nog steeds 
 
-
-Wat was lastig:
-- D
-
-
-Wat heb ik geleerd:
-- H
-
-
-Screenshots:
-- nog geen
-
-
-Feedback:
-- H
 
 ## 15-10-2024
 Acties:
@@ -133,11 +106,6 @@ Wat was lastig:
 
 Wat heb ik geleerd:
 - Het is netjes om ENUM te gebruiken in je database MAAR makkelijker om met 1 en 2 enz te werken met intergers
-
-
-Screenshots:
-- nog niet
-
 
 Feedback:
 - Het maken van de ERD moet in een gepaste tool gemaakt zijn.
@@ -165,11 +133,6 @@ Wat was lastig:
 Wat heb ik geleerd:
 - Het is netjes om ENUM te gebruiken in je database MAAR makkelijker om met 1 en 2 enz te werken met intergers
 
-
-Screenshots:
-- nog niet
-
-
 Feedback:
 - Het maken van de ERD moet in een gepaste tool gemaakt zijn.
 - Vervang reviews voor categories in de ERD
@@ -191,18 +154,6 @@ Wat verliep goed:
 
 Wat was lastig:
 - nvt
-
-
-Wat heb ik geleerd:
-- zie acties
-
-
-Screenshots:
-- nog niet
-
-
-Feedback:
-- geen
 
 
 
@@ -228,10 +179,6 @@ Wat was lastig:
 
 Wat heb ik geleerd:
 - Niet alleen van opdrachten doen kan je veel leren ook een instalatie doen heeft een leercurve
-
-
-Screenshots:
-- nog niet
 
 
 Feedback:
@@ -265,9 +212,6 @@ Wat was lastig:
 
 Wat heb ik geleerd:
 - k heb geleerd wat een MVC-framework is en in abstracte termen hoe je ermee werkt. Daarnaast heb ik geleerd hoe het installeren van Laravel werkt.
-
-Screenshots:
-- nog invullen
 
 Feedback:
 - Voor deze eerste dag was er nog geen feedback te geven, zie de docent.

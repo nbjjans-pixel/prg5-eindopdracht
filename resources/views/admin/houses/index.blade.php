@@ -10,8 +10,8 @@
 <table>
     <thead>
     <tr>
-        <th>locatie</th>
-        <th>provincie</th>
+        <th>Locatie</th>
+        <th>Provincie</th>
         <th>Prijs</th>
         <th>Status</th>
         <th>Acties</th>
@@ -24,7 +24,7 @@
             <td>{{ $house->location }}</td>
             <td>{{ $house->price }}</td>
             <td>
-                <form action="{{ route('admin.houses.update', $house->id) }}" method="POST">
+                <form action="{{ route('admin.houses.updateStatus', $house->id) }}" method="POST">
                     @csrf
                     @method('PUT')
                     <input type="hidden" name="status" value="{{ $house->status ? 0 : 1 }}">
